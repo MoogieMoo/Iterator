@@ -78,14 +78,12 @@ public class ItrWorkAL
     { 
 	List<Integer> evenLess = new ArrayList<Integer>();
 	Iterator i = L.iterator();
-	//int position = 0;
+	int position = 0;
 	while( i.hasNext() ) {
-	    //position += 1;
+	    position += 1;
 	    Integer x = (Integer) i.next();
-	    if( ( x % 2 ) == 0 ) {
-		if ( remove(x) == true ) { return; }
-		else if ( remove(x) == false ) { return; }
-		//evenLess.remove( position, (int) x );
+	    if( ( x % 2 ) == 0 ) {		
+		evenLess.remove( position );
 	    }
 	}    
     }
