@@ -47,7 +47,7 @@ public class ItrWorkAL
     public static List<Integer> oddsA( List<Integer> L ) 
     { 
 	List<Integer> odds = new ArrayList<Integer>();
-	for( Interger x : L ) {
+	for( Integer x : L ) {
 	    if( ( x % 2 ) != 0 ) {
 		odds.add(x);
 	    }
@@ -78,12 +78,12 @@ public class ItrWorkAL
     { 
 	List<Integer> evenLess = new ArrayList<Integer>();
 	Iterator i = L.iterator();
-	counter = 0;
+	int position = 0;
 	while( i.hasNext() ) {
-	    counter += 1;
+	    position += 1;
 	    Integer x = (Integer) i.next();
 	    if( ( x % 2 ) == 0 ) {
-		evenLess.remove( counter, x );
+		evenLess.remove( position, x );
 	    }
 	}    
 	return evenLess;
