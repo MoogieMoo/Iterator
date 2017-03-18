@@ -83,10 +83,9 @@ public class ItrWorkAL
 	    position += 1;
 	    Integer x = (Integer) i.next();
 	    if( ( x % 2 ) == 0 ) {
-		evenLess.remove( position, x );
+		evenLess.remove( position, (int) x );
 	    }
 	}    
-	return evenLess;
     }
 
 
