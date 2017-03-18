@@ -98,7 +98,13 @@ public class ItrWorkAL
 
 	for( int i = 0; i < 10; i++ )
 	    L.add(i);
-
+	System.out.println( "List L: " );
+	System.out.println( "[ " );
+	for( int n : L ) {
+	    System.out.print(n);
+	    System.out.print(" ");
+	}
+	System.out.print("]");
 
 	// TASK: write code to print the contents of ArrayList L...
 
@@ -117,16 +123,31 @@ public class ItrWorkAL
 
 	System.out.println("\nTesting oddsA...");
 	List<Integer> A = oddsA(L);
-	for( int n : A ) System.out.println(n);
+	System.out.println( "[ " );
+	for( int n : A ) {
+	    System.out.print(n);
+	    System.out.print(" ");
+	}
+	System.out.print("]");
 
-	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	System.out.println("\nTesting oddsB...");
 	List<Integer> B = oddsB(L);
-	for( int n : B ) System.out.println(n);
+	System.out.println( "[ " );
+	for( int n : B ) {
+	    System.out.print(n);
+	    System.out.print(" ");
+	}
+	System.out.print("]");
 
 	System.out.println("\nTesting removeEvens...");
 	removeEvens(L);
-	for( int n : L ) System.out.println(n);
+	System.out.println( "[ " );
+	for( int n : L ) {
+	    System.out.print(n);
+	    System.out.print(" ");
+	}
+	System.out.print("]");
+	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     }//end main
