@@ -111,11 +111,11 @@ public class ItrWorkAL
 	System.out.println("9 in L? -> " + foundA(9,L) );
 	System.out.println("13 in L? -> " + foundA(13,L) );
 
-	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	System.out.println("\nTesting foundB...");
 	System.out.println("9 in L? -> " + foundB(9,L) );
 	System.out.println("13 in L? -> " + foundB(13,L) );
 
+	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	System.out.println("\nTesting oddsA...");
 	List<Integer> A = oddsA(L);
 	for( int n : A ) System.out.println(n);
