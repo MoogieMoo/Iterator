@@ -74,26 +74,13 @@ public class ItrWork
 
     //explicitly using an iterator
     //modifies L s.t. it contains no evens
-    /*public static void removeEvens( List<Integer> L ) 
-    {
-	List<Integer> evenLess = new ArrayList<Integer>();
-	Iterator i = L.iterator();
-	int position = 0;
-	while( i.hasNext() ) {	    
-	    Integer x = (Integer) i.next();
-	    if( ( x % 2 ) == 0 ) {		
-		evenLess.remove( position );
-	    }
-	    position += 1;
-	}    
-	}*/
     public static void removeEvens( List<Integer> L ) 
     {
-	Iterator I = L.iterator();
-	while (I.hasNext()){
-	    Integer x = (Integer) I.next();
-	    if ((x%2) == 0){
-	    	I.remove();
+	Iterator i = L.iterator();
+	while ( i.hasNext() ){
+	    Integer x = (Integer) i.next();
+	    if ( ( x % 2 ) == 0 ){
+	    	i.remove();
 	    }
 	}
     }
@@ -149,6 +136,8 @@ public class ItrWork
 	    System.out.print(n);
 	    System.out.print(" ");
 	}
+
+	System.out.println( "---------------------------------");
 	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
