@@ -136,8 +136,8 @@ public class ItrWork
 	    System.out.print(n);
 	    System.out.print(" ");
 	}
-
-	System.out.println( "---------------------------------");
+	System.out.println();
+	
 	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
