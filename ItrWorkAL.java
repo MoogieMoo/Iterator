@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-public class ItrWorkAL 
+public class ItrWork 
 {
     //using FOREACH loop
     //returns a boolean to indicate whether key is present in L
@@ -74,8 +74,8 @@ public class ItrWorkAL
 
     //explicitly using an iterator
     //modifies L s.t. it contains no evens
-    public static void removeEvens( List<Integer> L ) 
-    { 
+    /*public static void removeEvens( List<Integer> L ) 
+    {
 	List<Integer> evenLess = new ArrayList<Integer>();
 	Iterator i = L.iterator();
 	int position = 0;
@@ -86,6 +86,16 @@ public class ItrWorkAL
 	    }
 	    position += 1;
 	}    
+	}*/
+    public static void removeEvens( List<Integer> L ) 
+    {
+	Iterator I = L.iterator();
+	while (I.hasNext()){
+	    Integer x = (Integer) I.next();
+	    if ((x%2) == 0){
+	    	I.remove();
+	    }
+	}
     }
 
 
@@ -144,4 +154,4 @@ public class ItrWorkAL
 
     }//end main
 
-}//end class ItrWorkAL
+}//end class ItrWork
